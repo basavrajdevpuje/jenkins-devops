@@ -31,5 +31,8 @@ pipeline{
 		failure{
 			echo "Some stage is failed"
 		}
+		changed{
+			echo "The status has changed"
+		}
 	}
 }
