@@ -20,4 +20,16 @@ pipeline{
 			}
 		}
 	}
+
+	post{
+		always{
+			echo "All ok!"
+		}
+		success{
+			echo "All steps ran successfully"
+		}
+		failure{
+			echo "Some stage is failed"
+		}
+	}
 }
